@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import customPlanReducer from './slices/customPlanSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    customPlan: customPlanReducer,
   },
 });
